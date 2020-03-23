@@ -1,4 +1,9 @@
 #This is a code developed by NIHIT
+# line 7 to line 10 contains bank details of 4 bank holders
+# While running this code check the details of the four bankholders
+#The first item in the list contains the name
+#The second item contains the account number
+#The third  item contain the password of the user
 user1 = ["rakesh", "2345", "rakesh", " 2546474", "0"]
 user2 = ["mukesh", "7564", "mukesh", "873464", "0"]
 user3 = ["lokesh", "9807", "lokesh", "345273", "0"]
@@ -23,7 +28,7 @@ def bank():
         print( "Welcome " )
         option = str(
             input( "What type of transaction you want to perform:Balance Inquiry,Cash Deposit,Cash Withdrawal,Loan" ) )
-        if option == "Balance Inquiry":
+        if option == "Balance Inquiry":            # Note that  you have to enter exact option given by the program like :- Cash Deposit not cash deposit or CASH DEPOSIT or else it will give an error
             print("You have the balance of rupees " + username[3] )
         elif option == "Cash Deposit":
             deposit = str( input( "Enter amount to deposit cash " ) )
